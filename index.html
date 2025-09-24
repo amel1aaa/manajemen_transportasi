@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Manajemen Transportasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-inner">
+          <h1>🚗🛵🚲Sistem Manajemen Transportasi🚗🛵🚲</h1>
+          <p class="subtitle">sewa kendaraan ditempat kami dijamin <strong>Nyaman</strong></p>
+        </div>
+        <div class="stars" aria-hidden="true"></div>
+      </header>
+    
+      <main class="container">
+        <section class="card form-card">
+          <h2>Catat Sewa Kendaraan</h2>
+          <form id="rentalForm" class="form-grid" autocomplete="off">
+            <label>
+              <span>Nama</span>
+              <input id="nama" type="text" placeholder="Nama pelanggan" />
+            </label>
+    
+            <label>
+              <span>No. Telepon</span>
+              <input id="telepon" type="text" placeholder="08xxxxxxxxxx" />
+            </label>
+    
+            <label>
+              <span>Jenis</span>
+              <select id="jenis">
+                <option value="Mobil">Mobil</option>
+                <option value="Motor">Motor</option>
+                <option value="Sepeda">Sepeda</option>
+              </select>
+            </label>
+    
+            <label>
+              <span>Merk</span>
+              <input id="merk" type="text" placeholder="Contoh: Toyota / Yamaha" />
+            </label>
+    
+            <label>
+              <span>Plat</span>
+              <input id="plat" type="text" placeholder="Contoh: BG 5070 DAT" />
+            </label>
+    
+            <div class="form-actions">
+              <button id="sewaBtn" type="submit" class="btn">Catat Sewa</button>
+              <button id="kembaliBtn" type="button" class="btn ghost">Tandai Kembali</button>
+            </div>
+          </form>
+        </section>
+    
+        <section class="card list-card">
+          <h2>Daftar Pelanggan Menyewa Kendaraan</h2>
+          <div id="list" class="list-area"></div>
+        </section>
+      </main>
+    
+      <footer class="footer">
+        <small>© Amelia Ardhana Riswadi - Politeknik Negeri Sriwijaya</small>
+      </footer>
+    
+      <script src="transportasi.js"></script>
+</body>
+</html>
